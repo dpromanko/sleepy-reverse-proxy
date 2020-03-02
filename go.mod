@@ -1,6 +1,6 @@
 module github.com/dpromanko/sleepy-reverse-proxy
 
-go 1.13
+go 1.14
 
 require (
 	github.com/gin-contrib/zap v0.0.1

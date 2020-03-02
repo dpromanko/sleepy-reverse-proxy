@@ -1,8 +1,6 @@
 default:
 	cat Makefile
 
+.PHONY: run
 run:
-	go run cmd/*
-
-test:
-	go test ./...
+	go run *.go
