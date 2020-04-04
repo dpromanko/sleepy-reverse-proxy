@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http/httputil"
 	"net/url"
 	"time"
@@ -32,7 +31,7 @@ func startServer(port string, proxyURL string, sleep time.Duration) error {
 
 	r.NoRoute(proxyHandler(u.Host, rp))
 
-	if err := r.Run(fmt.Sprintf(":%s", port)); err != nil {
+	if err := r.Run(":" + port); err != nil {
 		return err
 	}
 
